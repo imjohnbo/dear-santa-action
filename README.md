@@ -22,7 +22,7 @@ jobs:
   units:
     runs-on: ubuntu-latest
     steps:
-    - uses: imjohnbo/dear-santa-action@v1.x
+    - uses: imjohnbo/dear-santa-action@v1.0.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
