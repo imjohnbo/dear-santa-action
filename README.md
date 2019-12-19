@@ -11,15 +11,14 @@ Santa's on GitHub! Just type `Dear Santa` in an issue followed by the gifts you'
 ## Usage
 
 ```yaml
-name: "Dear Santa test"
+name: "Dear Santa"
 on:
   issue_comment:
   issues:
     types: [opened, edited]
 
 jobs:
-  # unit tests
-  units:
+  dear-santa:
     runs-on: ubuntu-latest
     steps:
     - uses: imjohnbo/dear-santa-action@v1.0.0
