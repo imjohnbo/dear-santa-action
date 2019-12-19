@@ -1,0 +1,15 @@
+name: "Dear Santa test"
+on:
+  issue_comment:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  # unit tests
+  units:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: ./
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,6 @@
+name: 'Dear Santa Action'
+description: |
+  'Write to Santa and he'll respond with just the right Christmas greeting 🎅'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
