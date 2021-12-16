@@ -3,6 +3,12 @@ description: "Write to Santa and he'll respond with just the right Christmas gre
 branding:
   icon: 'gift'
   color: 'red'
+inputs:
+  token:
+    description: |-
+      Token used to authenticate with the GitHub API.
+    required: false
+    default: ${{ github.token }}
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
